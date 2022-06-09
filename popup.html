@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      .popup {
+        padding: 10px;
+        width: 16rem;
+      }
+      .input-button-box,
+      .countdown-num {
+        display: flex;
+      }
+      .countdown-num {
+        justify-content: space-evenly;
+      }
+      .num-box {
+        background-color: skyblue;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        display: flex;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="input-box">
+        下班时间：
+        <div class="input-button-box">
+          <input type="text" placeholder="输入结束时间" id="timeInput" />
+          <button id="button">开始计时</button>
+        </div>
+      </div>
+      <hr />
+      <div class="countdown-box">
+        距离当前时间还有：
+        <div class="countdown-num">
+          <div class="num-box"><span id="day">00</span>天</div>
+          <div class="num-box"><span id="hour">00</span>时</div>
+          <div class="num-box"><span id="minute">00</span>分</div>
+          <div class="num-box"><span id="second">00</span>秒</div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/popup.js"></script>
+  </body>
+</html>

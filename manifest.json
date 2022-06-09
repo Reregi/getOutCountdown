@@ -1,0 +1,17 @@
+{
+  "name": "下班倒计时",
+  "description": "倒计时",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "48": "./img/logo.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "./img/logo.png"
+  },
+  "background": {
+    "service_worker": "./background.js"
+  },
+  "permissions": ["notifications", "storage", "alarms", "tabs"]
+}
